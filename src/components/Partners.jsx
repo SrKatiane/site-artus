@@ -1,13 +1,13 @@
 import React from 'react';
 import './Partners.css';
 
-import logoSaga from '../assets/Grupo Saga.png';
+import logoSaga from '../assets/grupo-saga.png';
 import logoRisc from '../assets/Risc.png';
 import logoAmbev from '../assets/ambev.png';
 import logoEquinox from '../assets/Equinox.png';
-import logoSA from '../assets/Sá Cavalcante.png';
+import logoSA from '../assets/sa-cavalcante.png';
 import logoSalum from '../assets/Salum.png';
-import logoAlert from '../assets/Alert System.png'
+import logoAlert from '../assets/alert-system.png'
 
 const logos = [
     logoSaga,

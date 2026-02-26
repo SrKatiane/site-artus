@@ -1,29 +1,35 @@
 import React from 'react';
 import './Portfolio.css';
 
+// Assets
+import port1 from '../assets/port-1.png';
+import port2 from '../assets/port-2.png';
+import port3 from '../assets/port-3.png';
+import port4 from '../assets/port-4.png';
+
 const projects = [
     {
         title: 'Manutenção de Painéis Industriais',
         client: 'Nome do cliente',
-        image: 'src/assets/port-1.png',
+        image: port1,
         category: 'Automação'
     },
     {
         title: 'Nome do Serviço',
         client: 'Nome do cliente',
-        image: 'src/assets/port-2.png',
+        image: port2,
         category: 'Elétrica de Potência'
     },
     {
         title: 'Nome do Serviço',
         client: 'Nome do cliente',
-        image: 'src/assets/port-3.png',
+        image: port3,
         category: 'TI & Dados'
     },
     {
         title: 'Montagem de Estruturas Metálicas',
         client: 'Nome do cliente',
-        image: 'src/assets/port-4.png',
+        image: port4,
         category: 'Infraestrutura'
     }
 ];

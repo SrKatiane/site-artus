@@ -15,13 +15,23 @@ import {
     ArrowUpRight
 } from 'lucide-react';
 
+// Assets
+import imgInstalacao from '../assets/instalacao-eletrica.png';
+import imgSubestacoes from '../assets/manutencao-de-subestacoes.png';
+import imgAutomacao from '../assets/automacao.png';
+import imgGestao from '../assets/gestao.png';
+import imgSpda from '../assets/spda.png';
+import imgMontagem from '../assets/montagem.png';
+import imgTiMonitoramento from '../assets/ti-monitoramento.png';
+import imgTurnkey from '../assets/turnkey.png';
+
 const services = [
     {
         id: 1,
         slug: 'instalacao-e-manutencao-eletrica',
         title: 'Instalação e Manutenção Elétrica',
         description: 'Soluções completas em sistemas elétricos de alta, média e baixa tensão.',
-        image: 'src/assets/InstalaçãoEletrica.png',
+        image: imgInstalacao,
         icon: <Zap size={24} />
     },
     {
@@ -29,7 +39,7 @@ const services = [
         slug: 'manutencao-de-subestacoes',
         title: 'Manutenção de Subestações',
         description: 'Serviços técnicos para garantir segurança e continuidade no fornecimento de energia.',
-        image: 'src/assets/ManutençãoDeSubestações.png',
+        image: imgSubestacoes,
         icon: <IterationCcw size={24} />
     },
     {
@@ -37,7 +47,7 @@ const services = [
         slug: 'automacao-industrial',
         title: 'Automação Industrial',
         description: 'Automação e controle de processos para mais eficiência e produtividade.',
-        image: 'src/assets/Automação.png',
+        image: imgAutomacao,
         icon: <Settings size={24} />
     },
     {
@@ -45,7 +55,7 @@ const services = [
         slug: 'gestao-de-projetos',
         title: 'Gestão de Projetos',
         description: 'Gestão técnica e operacional de projetos industriais, com controle rigoroso de prazo e qualidade.',
-        image: 'src/assets/Gestão.png',
+        image: imgGestao,
         icon: <BarChart3 size={24} />
     },
     {
@@ -53,7 +63,7 @@ const services = [
         slug: 'spda-e-aterramento',
         title: 'SPDA e Aterramento',
         description: 'Projetos e manutenção de sistemas de proteção contra descargas atmosféricas e aterramento.',
-        image: 'src/assets/SPDA.png',
+        image: imgSpda,
         icon: <ShieldCheck size={24} />
     },
     {
@@ -61,7 +71,7 @@ const services = [
         slug: 'infraestrutura-e-fabricacao',
         title: 'Infraestrutura e Fabricação',
         description: 'Fabricação e montagem de estruturas metálicas, inox e painéis elétricos sob medida.',
-        image: 'src/assets/Montagem.png',
+        image: imgMontagem,
         icon: <Wrench size={24} />
     },
     {
@@ -69,7 +79,7 @@ const services = [
         slug: 'ti-e-monitoramento',
         title: 'TI e Monitoramento',
         description: 'Implantação de redes, cabeamento estruturado e sistemas de monitoramento integrados.',
-        image: 'src/assets/image copy.png',
+        image: imgTiMonitoramento,
         icon: <Network size={24} />
     },
     {
@@ -77,7 +87,7 @@ const services = [
         slug: 'solucoes-turnkey',
         title: 'Soluções Turnkey',
         description: 'Projetos industriais completos, da engenharia à entrega pronta para operar.',
-        image: 'src/assets/Tunkey.png',
+        image: imgTurnkey,
         icon: <Key size={24} />
     }
 ];

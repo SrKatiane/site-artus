@@ -21,6 +21,11 @@ import Footer from '../components/Footer';
 import './AboutPage.css';
 import '../components/CTA.css';
 
+// Assets
+import imgAtuacao from '../assets/img-atuacao.png';
+import imgFuncionario from '../assets/funcionario.png';
+import imgArturito from '../assets/arturito.png';
+
 const AboutPage = () => {
     // Scroll to top when page is loaded
     useEffect(() => {
@@ -144,7 +149,7 @@ const AboutPage = () => {
                             <div className="performance-image-box">
                                 <div className="performance-img-wrapper">
                                     <img
-                                        src="src/assets/img-atuação.png"
+                                        src={imgAtuacao}
                                         alt="Industrial Facility"
                                     />
                                 </div>
@@ -211,7 +216,7 @@ const AboutPage = () => {
                             <div className="team-image-box">
                                 <div className="team-img-wrapper">
                                     <img
-                                        src="src\assets\Funcionário.png"
+                                        src={imgFuncionario}
                                         alt="Team"
                                     />
                                 </div>
@@ -285,7 +290,7 @@ const AboutPage = () => {
 
                                     <div className="mascot-img-box">
                                         <img
-                                            src="src/assets/ARTURITO.png"
+                                            src={imgArturito}
                                             alt="Arturito - Segurança Artus"
                                             className="mascot-3d-img"
                                         />
