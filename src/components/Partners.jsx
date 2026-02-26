@@ -2,11 +2,11 @@ import React from 'react';
 import './Partners.css';
 
 import logoSaga from '../assets/grupo-saga.png';
-import logoRisc from '../assets/Risc.png';
+import logoRisc from '../assets/risc.png';
 import logoAmbev from '../assets/ambev.png';
-import logoEquinox from '../assets/Equinox.png';
+import logoEquinox from '../assets/equinox.png';
 import logoSA from '../assets/sa-cavalcante.png';
-import logoSalum from '../assets/Salum.png';
+import logoSalum from '../assets/salum.png';
 import logoAlert from '../assets/alert-system.png'
 
 const logos = [
