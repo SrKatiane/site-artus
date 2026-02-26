@@ -2,7 +2,7 @@ export const servicesData = {
     'instalacao-e-manutencao-eletrica': {
         title: 'Instalação e Manutenção Elétrica Industrial',
         subtitle: 'Soluções seguras e eficientes para sistemas elétricos de alta, média e baixa tensão.',
-        heroImage: 'InstalaçãoEletrica.png',
+        heroImage: 'instalacao-eletrica.png',
         description: [
             'A Artus Engenharia atua na instalação, manutenção preventiva e corretiva de sistemas elétricos industriais, comerciais e corporativos, sempre em conformidade com normas técnicas e de segurança. Nossos serviços garantem confiabilidade, continuidade operacional e redução de riscos elétricos.',
             'Cada projeto é planejado de acordo com a realidade da operação, considerando desempenho, segurança e custo-benefício.'
@@ -30,7 +30,7 @@ export const servicesData = {
     'manutencao-de-subestacoes': {
         title: 'Manutenção e Comissionamento de Subestações',
         subtitle: 'Segurança, confiabilidade e continuidade no fornecimento de energia.',
-        heroImage: 'ManutençãoDeSubestações.png',
+        heroImage: 'manutencao-de-subestacoes.png',
         description: [
             'A Artus Engenharia oferece serviços especializados em manutenção, montagem e comissionamento de subestações de energia em alta, média e baixa tensão. Atuamos para garantir desempenho seguro, confiável e contínuo dos sistemas elétricos.',
             'Nossos serviços são executados por equipe qualificada, com responsabilidade técnica e emissão de laudos e relatórios.'
@@ -57,7 +57,7 @@ export const servicesData = {
     'automacao-industrial': {
         title: 'Automação Industrial',
         subtitle: 'Eficiência, controle e monitoramento inteligente dos processos industriais.',
-        heroImage: 'Automação.png',
+        heroImage: 'automacao.png',
         description: [
             'A Artus desenvolve e implanta soluções completas em automação industrial, integrando sistemas, processos e dados para aumentar a produtividade, segurança e controle da operação.',
             'Nossos projetos são escaláveis e adaptados à realidade de cada planta industrial.'
@@ -83,7 +83,7 @@ export const servicesData = {
     'gestao-de-projetos': {
         title: 'Engenharia e Gestão de Projetos Industriais',
         subtitle: 'Planejamento, controle e execução com responsabilidade técnica.',
-        heroImage: 'Gestão.png',
+        heroImage: 'gestao.png',
         description: [
             'A Artus atua na gestão técnica e operacional de projetos industriais, garantindo controle de prazos, custos, recursos e qualidade desde o planejamento até a entrega final.',
             'Assumimos a responsabilidade técnica e coordenamos todas as etapas do projeto.'
@@ -108,7 +108,7 @@ export const servicesData = {
     'spda-e-aterramento': {
         title: 'SPDA e Sistemas de Aterramento',
         subtitle: 'Proteção de pessoas, estruturas e equipamentos.',
-        heroImage: 'SPDA.png',
+        heroImage: 'spda.png',
         description: [
             'A Artus elabora, instala e mantém sistemas de proteção contra descargas atmosféricas (SPDA) e aterramento, garantindo segurança e conformidade com normas técnicas.'
         ],
@@ -130,7 +130,7 @@ export const servicesData = {
     'infraestrutura-e-fabricacao': {
         title: 'Infraestrutura Industrial e Fabricação',
         subtitle: 'Soluções sob medida para ambientes industriais de alta exigência.',
-        heroImage: 'Montagem.png',
+        heroImage: 'montagem.png',
         description: [
             'A Artus oferece soluções completas em fabricação, montagem e manutenção de estruturas industriais, atendendo operações que exigem robustez, precisão técnica e durabilidade.'
         ],
@@ -155,7 +155,7 @@ export const servicesData = {
     'ti-e-monitoramento': {
         title: 'Infraestrutura de TI e Redes Industriais',
         subtitle: 'Tecnologia integrada para suportar operações industriais.',
-        heroImage: 'image copy.png',
+        heroImage: 'ti-monitoramento.png',
         description: [
             'A Artus implanta e mantém infraestrutura tecnológica integrada, garantindo conectividade, monitoramento e suporte às operações industriais e corporativas.'
         ],
@@ -179,7 +179,7 @@ export const servicesData = {
     'solucoes-turnkey': {
         title: 'Soluções Industriais Turnkey',
         subtitle: 'Projetos completos, do planejamento à operação.',
-        heroImage: 'Tunkey.png',
+        heroImage: 'turnkey.png',
         activitiesTitle: 'O que abrange',
         description: [
             'A Artus executa projetos industriais completos em regime turnkey, assumindo todas as etapas do empreendimento e entregando a solução pronta para operar.',
