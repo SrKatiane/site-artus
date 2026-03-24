@@ -95,36 +95,81 @@ const services = [
 const Services = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isPaused, setIsPaused] = useState(false);
+    const [touchStart, setTouchStart] = useState(0);
+    const [touchEnd, setTouchEnd] = useState(0);
+    const [slidesToShow, setSlidesToShow] = useState(3);
+
+    // Update slides to show based on window width
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 768) {
+                setSlidesToShow(1);
+            } else if (window.innerWidth < 1024) {
+                setSlidesToShow(2);
+            } else {
+                setSlidesToShow(3);
+            }
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     // Auto-play logic
     useEffect(() => {
         if (isPaused) return;
 
         const interval = setInterval(() => {
-            setCurrentIndex((prev) => {
-                if (prev >= services.length - 3) return 0;
-                const next = prev + 3;
-                return next > services.length - 3 ? services.length - 3 : next;
-            });
-        }, 3000); // 3 seconds for easier digestion since 3 cards change
+            nextSlide();
+        }, 4000);
 
         return () => clearInterval(interval);
-    }, [isPaused]);
+    }, [isPaused, slidesToShow]);
 
     const nextSlide = () => {
         setCurrentIndex((prev) => {
-            if (prev >= services.length - 3) return 0;
-            const next = prev + 3;
-            return next > services.length - 3 ? services.length - 3 : next;
+            if (prev >= services.length - slidesToShow) return 0;
+            return prev + 1;
         });
+    };
+
+    const prevSlide = () => {
+        setCurrentIndex((prev) => {
+            if (prev <= 0) return services.length - slidesToShow;
+            return prev - 1;
+        });
+    };
+
+    const handleTouchStart = (e) => {
+        setTouchStart(e.targetTouches[0].clientX);
+    };
+
+    const handleTouchMove = (e) => {
+        setTouchEnd(e.targetTouches[0].clientX);
+    };
+
+    const handleTouchEnd = () => {
+        if (touchStart - touchEnd > 70) {
+            // Swipe left -> next
+            nextSlide();
+        }
+
+        if (touchStart - touchEnd < -70) {
+            // Swipe right -> prev
+            prevSlide();
+        }
     };
 
     const jumpToSlide = (idx) => {
         setCurrentIndex(idx);
     };
 
-    // Define the logical "stops" for the 8 cards (Showing 3 at a time)
-    const paginationStops = [0, 3, 5];
+    // Pagination stops based on slidesToShow
+    const paginationStops = Array.from(
+        { length: services.length - slidesToShow + 1 },
+        (_, i) => i
+    );
 
     return (
         <section className="services-section" id="servicos">
@@ -138,11 +183,17 @@ const Services = () => {
                 className="carousel-wrapper"
                 onMouseEnter={() => setIsPaused(true)}
                 onMouseLeave={() => setIsPaused(false)}
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
             >
                 <div className="carousel-overflow">
                     <div
                         className="services-carousel"
-                        style={{ '--current-index': currentIndex }}
+                        style={{
+                            transform: `translateX(calc(-1 * ${currentIndex} * (100% + 30px) / ${slidesToShow}))`,
+                            '--slides-to-show': slidesToShow
+                        }}
                     >
                         {services.map((service) => (
                             <div className="service-card" key={service.id}>

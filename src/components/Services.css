@@ -56,14 +56,13 @@
     display: flex;
     gap: 30px;
     width: 100%;
-    /* Important: Keep this at 100% of parent for calc math */
-    transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-    transform: translateX(calc(-1 * var(--current-index) * (100% / 3 + 10px)));
+    transition: transform 0.6s cubic-bezier(0.2, 0, 0.2, 1);
+    touch-action: pan-y;
 }
 
 .service-card {
-    flex: 0 0 calc((100% - 60px) / 3);
-    min-width: calc((100% - 60px) / 3);
+    flex: 0 0 calc((100% - (var(--slides-to-show) - 1) * 30px) / var(--slides-to-show));
+    min-width: calc((100% - (var(--slides-to-show) - 1) * 30px) / var(--slides-to-show));
     background: #f8fafc;
     border-radius: 8px;
     overflow: hidden;

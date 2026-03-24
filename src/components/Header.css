@@ -16,7 +16,6 @@
     display: flex;
     align-items: center;
     gap: 60px;
-    /* Space between nav and button */
 }
 
 .header.scrolled {
@@ -96,12 +95,98 @@
     filter: brightness(1.1);
 }
 
-@media (max-width: 768px) {
+.mobile-menu-toggle {
+    display: none;
+}
+
+@media (max-width: 991px) {
     .header {
-        padding: 20px 20px;
+        padding: 20px 30px;
+    }
+
+    .header-right {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        background: var(--primary-purple);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 40px;
+        gap: 40px;
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 999;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .header-right.active {
+        right: 0;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        color: var(--white);
+        cursor: pointer;
+        z-index: 1001;
+        transition: transform 0.3s ease;
     }
 
     .nav {
-        display: none;
+        display: block !important;
+        width: 100%;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .nav a {
+        font-size: 1.25rem;
+    }
+
+    .header .btn-cta {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 15px 30px;
+    }
+
+    .header.menu-open::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(4px);
+        z-index: 998;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 15px 20px;
+    }
+
+    .logo-image {
+        height: 36px;
+    }
+
+    .header-right {
+        width: 100%;
+    }
+
+    .header.scrolled {
+        padding: 12px 20px;
     }
 }
