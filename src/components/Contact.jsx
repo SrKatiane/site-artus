@@ -10,7 +10,7 @@ const Contact = () => {
                     {/* Left Column: Info */}
                     <div className="contact-info-column">
                         <h2 className="contact-title">
-                            Solicite um orçamento ou <span className="contact-title-accent">visita técnica</span>.
+                            Solicite um orçamento ou <span className="contact-title-accent">fale com nossa equipe</span>.
                         </h2>
                         <p className="contact-subtitle">
                             Estamos prontos para atender as demandas da sua indústria com agilidade e corpo técnico especializado.

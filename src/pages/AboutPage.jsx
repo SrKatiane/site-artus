@@ -90,7 +90,7 @@ const AboutPage = () => {
                                 Engenharia que sustenta <span className="highlight">operações industriais</span>
                             </h1>
                             <p className="about-hero-description">
-                                Conheça nossa forma de atuar, nossos valores e o compromisso técnico que aplicamos em cada projeto.
+                                Conheça a forma como a Artus atua em operações industriais, integrando engenharia, planejamento e execução em campo.
                             </p>
                         </motion.div>
                     </div>
@@ -106,7 +106,7 @@ const AboutPage = () => {
                                     A Artus é uma empresa de engenharia e soluções integradas, com atuação sólida no mercado industrial e forte presença em projetos de alta complexidade técnica. Atuamos nas áreas de elétrica, automação industrial, subestações, infraestrutura industrial e tecnologia, entregando soluções completas, do projeto à operação.
                                 </p>
                                 <p>
-                                    Nosso trabalho é orientado por eficiência operacional, segurança e responsabilidade técnica. Cada solução é pensada para funcionar no mundo real, respeitando normas, prazos, orçamento e, principalmente, a continuidade da operação do cliente.
+                                    Nosso trabalho é orientado por eficiência operacional, segurança e responsabilidade técnica. Cada solução é desenvolvida para funcionar no ambiente operacional do cliente, considerando segurança, continuidade da operação e viabilidade de implantação.
                                 </p>
                                 <p className="about-quote">
                                     Não acreditamos em soluções genéricas. Acreditamos em engenharia aplicada, bem planejada e bem executada.
@@ -143,7 +143,7 @@ const AboutPage = () => {
                                     ))}
                                 </ul>
                                 <p className="performance-note">
-                                    Nossa atuação vai além da execução. Participamos do planejamento, da tomada de decisão técnica e da entrega final pronta para operação.
+                                    Participamos desde o planejamento operacional até a implantação e entrada em funcionamento dos sistemas.
                                 </p>
                             </div>
                             <div className="performance-image-box">
@@ -163,7 +163,7 @@ const AboutPage = () => {
                     <div className="about-page-container">
                         <div className="methodology-header">
                             <h2 className="section-title">Nossa forma de trabalhar</h2>
-                            <p className="section-description">Cada projeto da Artus segue uma metodologia clara, técnica e orientada a resultado.</p>
+                            <p className="section-description">Cada projeto da Artus segue uma metodologia clara, técnica e orientada à operação.</p>
                         </div>
 
                         <div className="methodology-steps">
@@ -225,7 +225,7 @@ const AboutPage = () => {
                                 <h2 className="section-title">Nosso Time</h2>
                                 <div className="team-text">
                                     <p>
-                                        Contamos com uma equipe técnica de alta performance, formada por profissionais qualificados e preparados para atuar em ambientes industriais de alta exigência.
+                                        Contamos com profissionais preparados para atuar em operações industriais, seguindo padrões operacionais, normas de segurança e processos definidos para execução em campo.
                                     </p>
                                     <p>
                                         Nosso time é treinado continuamente, seguindo padrões técnicos, normas de segurança e boas práticas de engenharia. Valorizamos a vida, o conhecimento e a responsabilidade individual e coletiva em cada projeto.
@@ -251,8 +251,7 @@ const AboutPage = () => {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                 >
-                                    <span className="section-tag">SEGURANÇA & CONFIANÇA</span>
-                                    <h2 className="section-title dark">Segurança em primeiro lugar</h2>
+                                    <h2 className="section-title safety-title">Segurança em primeiro lugar</h2>
                                     <div className="safety-text">
                                         <p>
                                             Representada pelo <strong>Arturito</strong>, a segurança na Artus é parte da cultura operacional e não apenas protocolo. Nosso compromisso está presente em cada projeto, com planejamento técnico, prevenção de riscos e equipes preparadas para atuar com máxima responsabilidade.
@@ -263,7 +262,7 @@ const AboutPage = () => {
                                         <div className="safety-protocols">
                                             <div className="protocol-item">
                                                 <div className="protocol-dot"></div>
-                                                <span>Uso de EPIs de alta performance em todas as operações.</span>
+                                                <span>Uso obrigatório de EPIs em todas as atividades operacionais.</span>
                                             </div>
                                             <div className="protocol-item">
                                                 <div className="protocol-dot"></div>
@@ -271,7 +270,7 @@ const AboutPage = () => {
                                             </div>
                                             <div className="protocol-item">
                                                 <div className="protocol-dot"></div>
-                                                <span>Planejamento rigoroso para mitigação de riscos.</span>
+                                                <span>Análise prévia de riscos e definição de procedimentos operacionais.</span>
                                             </div>
                                         </div>
                                     </div>

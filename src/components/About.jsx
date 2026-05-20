@@ -6,8 +6,8 @@ import workersImage from '../assets/funcionario.png';
 const differentials = [
     {
         id: 1,
-        title: 'Engenharia com responsabilidade profissional',
-        description: 'Acompanhamento especializado em todas as etapas, com emissão de laudos e total aderência às normas.'
+        title: 'Planejamento e execução integrados',
+        description: 'Atuação coordenada entre engenharia, montagem e operação para reduzir falhas, retrabalho e impactos na produção.'
     },
     {
         id: 2,
@@ -17,12 +17,12 @@ const differentials = [
     {
         id: 3,
         title: 'Segurança como valor inegociável',
-        description: 'Segurança rigorosa com treinamentos, processos específicos e fiscalização constante em campo.'
+        description: 'Procedimentos, treinamentos e controle em campo voltados à integridade das equipes e da operação industrial.'
     },
     {
         id: 4,
-        title: 'Experiência industrial comprovada',
-        description: 'Expertise em ambientes industriais complexos com entregas ágeis e alta precisão técnica.'
+        title: 'Experiência em ambientes industriais críticos',
+        description: 'Atuação em setores industriais complexos com entregas ágeis e alta precisão técnica.'
     }
 ];
 
@@ -50,14 +50,13 @@ const About = () => {
 
                     <div className="about-description-text">
                         <p>
-                            A Artus é uma empresa especializada na gestão de projetos de engenharia e soluções integradas,
-                            com atuação sólida no setor industrial e foco em eficiência operacional,
-                            segurança e excelência técnica. Desenvolvemos e executamos projetos elétricos,
-                            automação, subestações e infraestrutura industrial, sempre com responsabilidade
-                            e compromisso com o funcionamento real da operação.
+                            A Artus atua na implantação e gestão de soluções industriais nas áreas de elétrica,
+                            automação, subestações e infraestrutura. Trabalhamos com foco em segurança, 
+                            planejamento operacional e continuidade da operação, atendendo ambientes industriais
+                            de diferentes níveis de complexidade.
                         </p>
                         <p className="highlight-tagline">
-                            Não entregamos apenas projetos. Entregamos sistemas prontos para operar com segurança, desempenho e confiabilidade.
+                            Não entregamos apenas projetos. Entregamos sistemas prontos para operar com desempenho, estabilidade e confiabilidade.
                         </p>
                     </div>
 

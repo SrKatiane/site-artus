@@ -465,6 +465,10 @@
     z-index: 10;
 }
 
+.safety-title {
+    color: var(--accent-yellow) !important;
+}
+
 .safety-protocols {
     margin-top: 35px;
     display: flex;

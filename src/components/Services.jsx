@@ -25,8 +25,8 @@ const services = [
     {
         id: 1,
         slug: 'engenharia-e-gestao-de-projetos',
-        title: 'Engenharia & Gestão de Projetos',
-        description: 'Planejamento técnico e operacional de projetos industriais, com gestão de prazos, custos, recursos e responsabilidade técnica em todas as etapas.',
+        title: 'Engenharia e Gestão de Projetos',
+        description: 'Planejamento e gestão operacional para implantação industrial, com controle de prazos, recursos, escopo e execução em campo.',
         image: imgGestao,
         icon: <BarChart3 size={24} />
     },
@@ -34,22 +34,22 @@ const services = [
         id: 2,
         slug: 'mecanica-caldeiraria-e-linhas-de-processo',
         title: 'Mecânica, Caldeiraria e Linhas de Processo',
-        description: 'Montagem de tubulações, caldeiraria pesada e leve, soldagem especializada e linhas de processo para indústrias de alta exigência técnica.',
+        description: 'Montagem de tubulações, caldeiraria pesada e leve, soldagem especializada e linhas de processo para indústrias.',
         image: imgMontagem,
         icon: <Wrench size={24} />
     },
     {
         id: 3,
         slug: 'infraestrutura-e-fabricacao-industrial',
-        title: 'Infraestrutura & Fabricação Industrial',
-        description: 'Fabricação e montagem de estruturas metálicas e inox, infraestrutura seca industrial, suportes técnicos e instalação de equipamentos.',
+        title: 'Infraestrutura e Fabricação Industrial',
+        description: 'Fabricação e montagem de estruturas metálicas e inox, infraestrutura seca industrial, bases, suportes e instalação de equipamentos.',
         image: imgFabricacao,
         icon: <Factory size={24} />
     },
     {
         id: 4,
         slug: 'eletrica-instrumentacao-e-subestacoes',
-        title: 'Elétrica, Instrumentação & Subestações',
+        title: 'Elétrica, Instrumentação e Subestações',
         description: 'Projetos e execução de sistemas elétricos de alta, média e baixa tensão, subestações, SPDA, instrumentação e comissionamento elétrico.',
         image: imgEletrica,
         icon: <Zap size={24} />
@@ -57,15 +57,15 @@ const services = [
     {
         id: 5,
         slug: 'ti-redes-e-monitoramento',
-        title: 'TI, Redes & Monitoramento',
-        description: 'Implantação de redes industriais e corporativas, fibra óptica, monitoramento, integração de dados e suporte técnico especializado.',
+        title: 'TI, Redes e Monitoramento',
+        description: 'Implantação de redes industriais e corporativas, fibra óptica, monitoramento e integração de infraestrutura operacional.',
         image: imgTiMonitoramento,
         icon: <Network size={24} />
     },
     {
         id: 6,
         slug: 'tcn-paas',
-        title: 'Plataform As A Service (TCN-PaaS)',
+        title: 'Automação Industrial por Assinatura (TCN-PaaS)',
         description: 'Automação industrial por assinatura: hardware, software, manutenção e suporte em mensalidade fixa, sem altos investimentos iniciais.',
         image: imgAutomacao,
         icon: <CloudCog size={24} />

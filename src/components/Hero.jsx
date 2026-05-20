@@ -15,8 +15,8 @@ const Hero = () => {
                 </h1>
 
                 <p className="hero-description">
-                    Projetos elétricos, automação, subestações e infraestrutura industrial
-                    executados com responsabilidade técnica e foco total na sua produtividade.
+                    Projetos elétricos, automação, subestações e infraestrutura 
+                    industrial executados com segurança, planejamento e foco na continuidade da operação.
                 </p>
 
                 <div className="hero-actions">
