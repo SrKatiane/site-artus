@@ -348,7 +348,7 @@ const PortfolioPage = () => {
 
     return (
         <div className="service-page-root portfolio-page-root-redesign">
-            {/* Hero Section no padrão das páginas de serviço */}
+            {/* Hero Section */}
             <section className="service-hero">
                 <div className="service-hero-bg">
                     <img
@@ -365,7 +365,7 @@ const PortfolioPage = () => {
                         </Link>
                         <h1 className="service-hero-title">Nosso Portfólio</h1>
                         <p className="service-hero-subtitle">
-                            Conheça as obras de alta complexidade e projetos de engenharia industrial executados pela Artus Engenharia.
+                            Conheça os projetos de engenharia industrial executados pela Artus Engenharia.
                         </p>
                     </div>
                 </div>
@@ -442,7 +442,7 @@ const PortfolioPage = () => {
                 <div className="service-page-container">
                     <div className="confidence-content">
                         <h2 className="confidence-title">
-                            Tenha a certeza de que seu projeto será entregue no prazo e dentro do orçamento.
+                            Experiência aplicada em campo.
                         </h2>
                         
                         <ul className="confidence-list">
@@ -450,25 +450,25 @@ const PortfolioPage = () => {
                                 <div className="confidence-check-icon">
                                     <CheckCircle2 size={20} />
                                 </div>
-                                <span>Gestão eficiente e rigorosa de projetos de engenharia</span>
+                                <span>Planejamento e implantação de soluções para operações industriais</span>
                             </li>
                             <li>
                                 <div className="confidence-check-icon">
                                     <CheckCircle2 size={20} />
                                 </div>
-                                <span>Alinhamento total com normas técnicas e padrões de segurança</span>
+                                <span>Atuação em cervejarias, indústrias de bebidas, mineração, portos e logística</span>
                             </li>
                             <li>
                                 <div className="confidence-check-icon">
                                     <CheckCircle2 size={20} />
                                 </div>
-                                <span>Experiência consolidada no atendimento a indústrias de alta complexidade</span>
+                                <span>Projetos em elétrica, automação, infraestrutura e utilidades industriais</span>
                             </li>
                             <li>
                                 <div className="confidence-check-icon">
                                     <CheckCircle2 size={20} />
                                 </div>
-                                <span>Equipe própria de engenheiros e especialistas altamente qualificados</span>
+                                <span>Equipes preparadas para montagem, manutenção e operação em ambiente produtivo</span>
                             </li>
                         </ul>
                     </div>
