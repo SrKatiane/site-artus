@@ -1,0 +1,382 @@
+.portfolio-page-root-redesign {
+    background-color: var(--white);
+    min-height: 100vh;
+}
+
+/* Container limits matching Services / Contact */
+.portfolio-page-root-redesign .service-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Grid Section with white background */
+.portfolio-grid-section {
+    background-color: var(--white);
+    padding: 80px 0;
+}
+
+.portfolio-grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* 3-column Grid matching the mockup */
+.portfolio-grid-3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Card design matching the Home Portfolio section */
+.portfolio-page-project-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 3 / 4; /* Initial aspect ratio, portrait style */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-page-project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-page-card-image-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.portfolio-page-project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: none !important; /* Force color, absolutely no grayscale */
+    transition: transform 0.8s ease;
+}
+
+.portfolio-page-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg,
+            rgba(15, 23, 42, 0.95) 0%, /* Matched hero dark navy tone (#0F172A) */
+            rgba(15, 23, 42, 0.4) 50%,
+            transparent 100%);
+    opacity: 0.85;
+    transition: opacity 0.5s ease;
+}
+
+.portfolio-page-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    width: 100%;
+    transform: translateY(10px);
+    transition: transform 0.5s ease;
+    z-index: 2;
+    text-align: left;
+}
+
+.portfolio-page-project-category {
+    color: var(--accent-yellow);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.portfolio-page-project-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+.portfolio-page-corner-accent {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    border-top: 2px solid var(--accent-yellow);
+    border-right: 2px solid var(--accent-yellow);
+    opacity: 0;
+    transform: translate(10px, -10px);
+    transition: all 0.5s ease;
+}
+
+/* Hover Effects matching Home page */
+.portfolio-page-project-card:hover .portfolio-page-project-img {
+    transform: scale(1.1);
+}
+
+.portfolio-page-project-card:hover .portfolio-page-card-overlay {
+    opacity: 0.95;
+}
+
+.portfolio-page-project-card:hover .portfolio-page-card-content {
+    transform: translateY(0);
+}
+
+.portfolio-page-project-card:hover .portfolio-page-corner-accent {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* ==========================================================================
+   PAGINATION STYLING (MATCHING MOCKUP)
+   ========================================================================== */
+
+.portfolio-pagination {
+    display: flex;
+    justify-content: flex-end; /* Align right as in mockup */
+    margin-top: 20px;
+}
+
+.pagination-list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination-num {
+    background: transparent;
+    border: none;
+    color: #64748b;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pagination-num:hover {
+    color: #0f172a;
+    background-color: #f1f5f9;
+}
+
+.pagination-num.active {
+    color: #0f172a;
+    font-weight: 800;
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+/* Underline indicator for active page if preferred, or just bold */
+.pagination-num.active::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    width: 12px;
+    height: 2px;
+    background-color: #0f172a;
+    border-radius: 2px;
+}
+
+.pagination-arrow {
+    background: transparent;
+    border: none;
+    color: #64748b;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pagination-arrow:hover {
+    color: #0f172a;
+    transform: translateX(2px);
+}
+
+/* ==========================================================================
+   CONFIDENCE BANNER STYLING (MATCHING MOCKUP)
+   ========================================================================== */
+
+.portfolio-confidence-banner {
+    position: relative;
+    background-color: rgba(30, 58, 138, 0.7); /* Reduced opacity deep blue (mixes with the white background) */
+    padding: 80px 0;
+    overflow: hidden;
+    color: var(--white);
+}
+
+/* Worker in second plan, covering the entire banner adjusted and mixed in overlay */
+.confidence-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center right;
+    opacity: 0.25;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.confidence-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, 
+        rgba(30, 58, 138, 0.8) 0%, 
+        rgba(30, 58, 138, 0.65) 50%, 
+        rgba(30, 58, 138, 0.2) 100%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.confidence-content {
+    position: relative;
+    z-index: 10;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.confidence-title {
+    font-size: 2.1rem;
+    font-weight: 800;
+    line-height: 1.25;
+    color: var(--white);
+    margin-bottom: 30px;
+    letter-spacing: -0.01em;
+}
+
+.confidence-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.confidence-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.confidence-check-icon {
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Yellow Button: Bottom left of this section */
+.confidence-cta-btn {
+    background-color: #facc15; /* Bright solid yellow */
+    color: #0f172a;
+    border: none;
+    border-radius: 4px;
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(250, 204, 21, 0.25);
+    transition: all 0.3s ease;
+}
+
+.confidence-cta-btn:hover {
+    background-color: var(--white);
+    color: #1e3a8a;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (RESPONSIVE STYLING)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .portfolio-grid-3col {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    
+    .confidence-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-grid-section {
+        padding: 50px 0;
+    }
+    
+    .portfolio-grid-3col {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .portfolio-card-img-wrapper {
+        height: 200px;
+    }
+
+    .portfolio-pagination {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .confidence-bg-image {
+        width: 100%;
+    }
+
+    .confidence-overlay {
+        background: rgba(30, 58, 138, 0.95);
+    }
+
+    .portfolio-confidence-banner {
+        padding: 50px 0;
+    }
+
+    .confidence-title {
+        font-size: 1.5rem;
+        margin-bottom: 24px;
+    }
+
+    .confidence-list li {
+        font-size: 0.95rem;
+    }
+
+    .confidence-cta-btn {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+        width: 100%; /* Full width button on mobile */
+        text-align: center;
+    }
+}

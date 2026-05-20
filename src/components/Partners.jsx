@@ -1,22 +1,30 @@
 import React from 'react';
 import './Partners.css';
 
-import logoSaga from '../assets/grupo-saga.png';
+import logoEsfera from '../assets/esfera.png';
 import logoRisc from '../assets/risc.png';
 import logoAmbev from '../assets/ambev.png';
 import logoEquinox from '../assets/equinox.png';
-import logoSA from '../assets/sa-cavalcante.png';
-import logoSalum from '../assets/salum.png';
-import logoAlert from '../assets/alert-system.png'
+import logoTecnale from '../assets/tecnale.png';
+import logoDolphin from '../assets/dolphin.png';
+import logoAlert from '../assets/alert-system.png';
+import logoSanmartin from '../assets/sanmartin.png';
+import logoMayekawa from '../assets/mayekawa.png';
+import logoEngrp from '../assets/engrp.png'
+import logoSalmeron from '../assets/salmeron1.png'
 
 const logos = [
-    logoSaga,
+    logoEsfera,
     logoRisc,
     logoAmbev,
     logoEquinox,
-    logoSA,
-    logoSalum,
+    logoTecnale,
+    logoDolphin,
     logoAlert,
+    logoSanmartin,
+    logoMayekawa,
+    logoEngrp,
+    logoSalmeron
 ];
 
 const Partners = () => {

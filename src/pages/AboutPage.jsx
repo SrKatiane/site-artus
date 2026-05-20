@@ -255,17 +255,19 @@ const AboutPage = () => {
                                     <h2 className="section-title dark">Segurança em primeiro lugar</h2>
                                     <div className="safety-text">
                                         <p>
-                                            Na Artus, segurança não é discurso institucional — é prática diária. O <strong>Arturito</strong>, nosso mascote, representa a força e o cuidado em cada detalhe.
+                                            Representada pelo <strong>Arturito</strong>, a segurança na Artus é parte da cultura operacional e não apenas protocolo. Nosso compromisso está presente em cada projeto, com planejamento técnico, prevenção de riscos e equipes preparadas para atuar com máxima responsabilidade.
                                         </p>
+                                        <br />
+                                        <p>Operamos em conformidade com os requisitos legais de Segurança do Trabalho</p>
 
                                         <div className="safety-protocols">
                                             <div className="protocol-item">
                                                 <div className="protocol-dot"></div>
-                                                <span>EPIs de alta performance em todas as operações.</span>
+                                                <span>Uso de EPIs de alta performance em todas as operações.</span>
                                             </div>
                                             <div className="protocol-item">
                                                 <div className="protocol-dot"></div>
-                                                <span>Treinamento contínuo e conformidade normativa.</span>
+                                                <span>Realização de treinamento contínuo e capacitação técnica das equipes.</span>
                                             </div>
                                             <div className="protocol-item">
                                                 <div className="protocol-dot"></div>

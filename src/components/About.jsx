@@ -6,8 +6,8 @@ import workersImage from '../assets/funcionario.png';
 const differentials = [
     {
         id: 1,
-        title: 'Engenharia com responsabilidade técnica',
-        description: 'Acompanhamento especializado em todas as etapas, com emissão de laudos e total conformidade técnica.'
+        title: 'Engenharia com responsabilidade profissional',
+        description: 'Acompanhamento especializado em todas as etapas, com emissão de laudos e total aderência às normas.'
     },
     {
         id: 2,
@@ -37,11 +37,6 @@ const About = () => {
                         <div className="main-image-wrapper">
                             <img src={workersImage} alt="Time Artus em campo" className="about-main-img" />
                         </div>
-                        {/* Stats box - positioned bottom-right with negative offset */}
-                        <div className="stats-box">
-                            <div className="stats-number">10+</div>
-                            <div className="stats-label">Anos de Experiência</div>
-                        </div>
                     </div>
                     {/* Background Decor */}
                     <div className="image-bg-decor"></div>
@@ -55,11 +50,11 @@ const About = () => {
 
                     <div className="about-description-text">
                         <p>
-                            A Artus é uma empresa de engenharia e soluções integradas,
+                            A Artus é uma empresa especializada na gestão de projetos de engenharia e soluções integradas,
                             com atuação sólida no setor industrial e foco em eficiência operacional,
                             segurança e excelência técnica. Desenvolvemos e executamos projetos elétricos,
                             automação, subestações e infraestrutura industrial, sempre com responsabilidade
-                            técnica e compromisso com o funcionamento real da operação.
+                            e compromisso com o funcionamento real da operação.
                         </p>
                         <p className="highlight-tagline">
                             Não entregamos apenas projetos. Entregamos sistemas prontos para operar com segurança, desempenho e confiabilidade.

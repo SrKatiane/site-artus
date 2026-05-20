@@ -21,7 +21,7 @@ const Hero = () => {
 
                 <div className="hero-actions">
                     <a href="#contato" className="btn btn-primary btn-hero">Fale com um especialista</a>
-                    <a href="#servicos" className="btn btn-outline btn-hero">Conheça nossos serviços</a>
+                    <a href="#servicos" className="btn btn-outline btn-hero">Conheça nossas soluções</a>
                 </div>
             </div>
         </section>

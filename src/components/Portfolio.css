@@ -1,6 +1,6 @@
 .portfolio-section {
     padding: 80px 40px;
-    background-color: #2C0D6C;
+    background-color: #024492;
     color: var(--white);
     overflow: hidden;
     position: relative;
@@ -24,7 +24,7 @@
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center, rgba(44, 13, 108, 0.5) 0%, transparent 70%);
+    background: radial-gradient(circle at center, rgba(2, 68, 146, 0.5) 0%, transparent 70%);
     pointer-events: none;
     z-index: 2;
 }
@@ -114,8 +114,8 @@
     position: absolute;
     inset: 0;
     background: linear-gradient(0deg,
-            rgba(44, 13, 108, 0.9) 0%,
-            rgba(44, 13, 108, 0.2) 50%,
+            rgba(2, 68, 146, 0.9) 0%,
+            rgba(2, 68, 146, 0.2) 50%,
             transparent 100%);
     opacity: 0.85;
     transition: opacity 0.5s ease;

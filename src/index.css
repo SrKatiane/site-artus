@@ -2,13 +2,13 @@
 
 :root {
   /* Artus Engenharia Palette */
-  --primary-purple: #2C0D6C;
+  --primary-purple: #0F172A;
   --accent-yellow: #E4E000;
   --accent-green: #60DD00;
   --accent-green-dark: #559F01;
 
   /* UI Colors */
-  --bg-dark: #1a0841;
+  --bg-dark: #0F172A;
   /* Darker variant for backgrounds if needed */
   --white: #FFFFFF;
   --text-primary: #FFFFFF;

@@ -19,12 +19,22 @@
 }
 
 .header.scrolled {
-    background: rgba(26, 13, 75, 0.95);
+    background: #FFFFFF;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     padding: 15px 80px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.header.scrolled .nav a,
+.header.scrolled .mobile-menu-toggle,
+.header.menu-open .mobile-menu-toggle {
+    color: #0F172A;
+}
+
+.header.scrolled .nav a::after {
+    background-color: #0F172A;
 }
 
 .logo-container {
@@ -111,7 +121,7 @@
         width: 80%;
         max-width: 400px;
         height: 100vh;
-        background: var(--primary-purple);
+        background: #FFFFFF;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -151,6 +161,7 @@
 
     .nav a {
         font-size: 1.25rem;
+        color: #0F172A;
     }
 
     .header .btn-cta {

@@ -1,36 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Portfolio.css';
 
 // Assets
-import port1 from '../assets/port-1.png';
+import cardHome1 from '../assets/card-home-1.jpg';
 import port2 from '../assets/port-2.png';
 import port3 from '../assets/port-3.png';
-import port4 from '../assets/port-4.png';
+import cardHome4 from '../assets/card-home-4.jpg';
 
 const projects = [
     {
-        title: 'Manutenção de Painéis Industriais',
-        client: 'Nome do cliente',
-        image: port1,
+        title: 'Comissionamento Industrial',
+        image: cardHome1,
         category: 'Automação'
     },
     {
-        title: 'Nome do Serviço',
-        client: 'Nome do cliente',
+        title: 'Montagem de Infraestrutura Seca para Cabos',
         image: port2,
-        category: 'Elétrica de Potência'
-    },
-    {
-        title: 'Nome do Serviço',
-        client: 'Nome do cliente',
-        image: port3,
-        category: 'TI & Dados'
-    },
-    {
-        title: 'Montagem de Estruturas Metálicas',
-        client: 'Nome do cliente',
-        image: port4,
         category: 'Infraestrutura'
+    },
+    {
+        title: 'Rede Estruturada e Backbone de Fibra Óptica',
+        image: port3,
+        category: 'TI & Redes'
+    },
+    {
+        title: 'Inspeção e Medição ',
+        image: cardHome4,
+        category: 'Elétrica'
     }
 ];
 
@@ -44,12 +41,12 @@ const Portfolio = () => {
                     <div className="portfolio-header-text">
                         <p className="portfolio-tag">CASES DE SUCESSO</p>
                         <h2 className="portfolio-title">
-                            Projetos que comprovam nossa <span className="portfolio-title-accent">excelência técnica</span>.
+                            Projetos que comprovam nossa <span className="portfolio-title-accent">excelência</span>.
                         </h2>
                     </div>
-                    <a href="#portfolio" className="portfolio-cta">
+                    <Link to="/portfolio" className="portfolio-cta">
                         Ver portfólio completo
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="portfolio-grid">
@@ -68,9 +65,6 @@ const Portfolio = () => {
                                         {project.category}
                                     </span>
                                     <h3 className="portfolio-project-title">{project.title}</h3>
-                                    <p className="portfolio-project-client">
-                                        {project.client}
-                                    </p>
                                 </div>
 
                                 {/* Corner accent */}

@@ -153,7 +153,7 @@ const ServicePage = () => {
                                     Precisa de excelência em <span className="cta-title-accent">{service.title}</span>?
                                 </h2>
                                 <p className="cta-description">
-                                    Estamos prontos para entender seu cenário e entregar soluções que funcionam com segurança e alto desempenho.
+                                    Estamos prontos para entender o seu cenário e entregar soluções que funcionam com segurança e alto desempenho.
                                 </p>
                                 <Link to="/contato" className="cta-button">
                                     {service.ctaText}

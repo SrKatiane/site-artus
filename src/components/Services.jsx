@@ -2,93 +2,73 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Services.css';
 import {
-    Zap,
-    IterationCcw,
-    Settings,
     BarChart3,
-    ShieldCheck,
     Wrench,
+    Factory,
+    Zap,
     Network,
-    Key,
+    CloudCog,
     ChevronLeft,
     ChevronRight,
     ArrowUpRight
 } from 'lucide-react';
 
 // Assets
-import imgInstalacao from '../assets/instalacao-eletrica.png';
-import imgSubestacoes from '../assets/manutencao-de-subestacoes.png';
-import imgAutomacao from '../assets/automacao.png';
-import imgGestao from '../assets/gestao.png';
-import imgSpda from '../assets/spda.png';
-import imgMontagem from '../assets/montagem.png';
+import imgGestao from '../assets/gestão2.png';
+import imgMontagem from '../assets/mecanica.png';
+import imgFabricacao from '../assets/infraestrutura-e-fabricacao.png';
+import imgEletrica from '../assets/manutencao-de-subestacoes.png';
 import imgTiMonitoramento from '../assets/ti-monitoramento.png';
-import imgTurnkey from '../assets/turnkey.png';
+import imgAutomacao from '../assets/paas.png';
 
 const services = [
     {
         id: 1,
-        slug: 'instalacao-e-manutencao-eletrica',
-        title: 'Instalação e Manutenção Elétrica',
-        description: 'Soluções completas em sistemas elétricos de alta, média e baixa tensão.',
-        image: imgInstalacao,
-        icon: <Zap size={24} />
-    },
-    {
-        id: 2,
-        slug: 'manutencao-de-subestacoes',
-        title: 'Manutenção de Subestações',
-        description: 'Serviços técnicos para garantir segurança e continuidade no fornecimento de energia.',
-        image: imgSubestacoes,
-        icon: <IterationCcw size={24} />
-    },
-    {
-        id: 3,
-        slug: 'automacao-industrial',
-        title: 'Automação Industrial',
-        description: 'Automação e controle de processos para mais eficiência e produtividade.',
-        image: imgAutomacao,
-        icon: <Settings size={24} />
-    },
-    {
-        id: 4,
-        slug: 'gestao-de-projetos',
-        title: 'Gestão de Projetos',
-        description: 'Gestão técnica e operacional de projetos industriais, com controle rigoroso de prazo e qualidade.',
+        slug: 'engenharia-e-gestao-de-projetos',
+        title: 'Engenharia & Gestão de Projetos',
+        description: 'Planejamento técnico e operacional de projetos industriais, com gestão de prazos, custos, recursos e responsabilidade técnica em todas as etapas.',
         image: imgGestao,
         icon: <BarChart3 size={24} />
     },
     {
-        id: 5,
-        slug: 'spda-e-aterramento',
-        title: 'SPDA e Aterramento',
-        description: 'Projetos e manutenção de sistemas de proteção contra descargas atmosféricas e aterramento.',
-        image: imgSpda,
-        icon: <ShieldCheck size={24} />
-    },
-    {
-        id: 6,
-        slug: 'infraestrutura-e-fabricacao',
-        title: 'Infraestrutura e Fabricação',
-        description: 'Fabricação e montagem de estruturas metálicas, inox e painéis elétricos sob medida.',
+        id: 2,
+        slug: 'mecanica-caldeiraria-e-linhas-de-processo',
+        title: 'Mecânica, Caldeiraria e Linhas de Processo',
+        description: 'Montagem de tubulações, caldeiraria pesada e leve, soldagem especializada e linhas de processo para indústrias de alta exigência técnica.',
         image: imgMontagem,
         icon: <Wrench size={24} />
     },
     {
-        id: 7,
-        slug: 'ti-e-monitoramento',
-        title: 'TI e Monitoramento',
-        description: 'Implantação de redes, cabeamento estruturado e sistemas de monitoramento integrados.',
+        id: 3,
+        slug: 'infraestrutura-e-fabricacao-industrial',
+        title: 'Infraestrutura & Fabricação Industrial',
+        description: 'Fabricação e montagem de estruturas metálicas e inox, infraestrutura seca industrial, suportes técnicos e instalação de equipamentos.',
+        image: imgFabricacao,
+        icon: <Factory size={24} />
+    },
+    {
+        id: 4,
+        slug: 'eletrica-instrumentacao-e-subestacoes',
+        title: 'Elétrica, Instrumentação & Subestações',
+        description: 'Projetos e execução de sistemas elétricos de alta, média e baixa tensão, subestações, SPDA, instrumentação e comissionamento elétrico.',
+        image: imgEletrica,
+        icon: <Zap size={24} />
+    },
+    {
+        id: 5,
+        slug: 'ti-redes-e-monitoramento',
+        title: 'TI, Redes & Monitoramento',
+        description: 'Implantação de redes industriais e corporativas, fibra óptica, monitoramento, integração de dados e suporte técnico especializado.',
         image: imgTiMonitoramento,
         icon: <Network size={24} />
     },
     {
-        id: 8,
-        slug: 'solucoes-turnkey',
-        title: 'Soluções Turnkey',
-        description: 'Projetos industriais completos, da engenharia à entrega pronta para operar.',
-        image: imgTurnkey,
-        icon: <Key size={24} />
+        id: 6,
+        slug: 'tcn-paas',
+        title: 'Plataform As A Service (TCN-PaaS)',
+        description: 'Automação industrial por assinatura: hardware, software, manutenção e suporte em mensalidade fixa, sem altos investimentos iniciais.',
+        image: imgAutomacao,
+        icon: <CloudCog size={24} />
     }
 ];
 
@@ -99,7 +79,6 @@ const Services = () => {
     const [touchEnd, setTouchEnd] = useState(0);
     const [slidesToShow, setSlidesToShow] = useState(3);
 
-    // Update slides to show based on window width
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth < 768) {
@@ -116,7 +95,6 @@ const Services = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    // Auto-play logic
     useEffect(() => {
         if (isPaused) return;
 
@@ -150,22 +128,14 @@ const Services = () => {
     };
 
     const handleTouchEnd = () => {
-        if (touchStart - touchEnd > 70) {
-            // Swipe left -> next
-            nextSlide();
-        }
-
-        if (touchStart - touchEnd < -70) {
-            // Swipe right -> prev
-            prevSlide();
-        }
+        if (touchStart - touchEnd > 70) nextSlide();
+        if (touchStart - touchEnd < -70) prevSlide();
     };
 
     const jumpToSlide = (idx) => {
         setCurrentIndex(idx);
     };
 
-    // Pagination stops based on slidesToShow
     const paginationStops = Array.from(
         { length: services.length - slidesToShow + 1 },
         (_, i) => i
@@ -223,7 +193,7 @@ const Services = () => {
                             key={stopIndex}
                             className={`dot ${currentIndex === stopIndex ? 'active' : ''}`}
                             onClick={() => jumpToSlide(stopIndex)}
-                            aria-label={`Ir para seção ${stopIndex / 3 + 1}`}
+                            aria-label={`Ir para seção ${stopIndex + 1}`}
                         />
                     ))}
                 </div>

@@ -14,7 +14,7 @@
     position: relative;
     padding: 120px 0 80px;
     /* Matched ServicePage padding */
-    background-color: #1A0D42;
+    background-color: #0F172A;
     /* Standard Artus Navy */
     overflow: hidden;
 }
@@ -22,17 +22,17 @@
 .about-hero-bg {
     position: absolute;
     inset: 0;
-    opacity: 0.3;
+    opacity: 1;
     /* Matched ServicePage opacity */
 }
 
 .about-hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg,
-            rgba(44, 13, 108, 0.95) 0%,
-            rgba(44, 13, 108, 0.6) 50%,
-            rgba(44, 13, 108, 0) 100%);
+    background: linear-gradient(135deg,
+            rgba(15, 23, 42, 0.95) 0%,
+            rgba(15, 23, 42, 0.6) 50%,
+            rgba(15, 23, 42, 0) 100%);
     z-index: 1;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .section-tag {
-    font-size: 0.8rem;
+    font-size: 1.15rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.3em;
@@ -283,7 +283,7 @@
 .about-differentials {
     padding: 60px 0;
     /* Reduced from 100px */
-    background-color: #2C0D6C;
+    background-color: #024492;
     color: var(--white);
     position: relative;
     overflow: hidden;
@@ -432,7 +432,7 @@
 }
 
 .safety-card {
-    background-color: #1A0D4B;
+    background-color: #024492;
     border-radius: 40px;
     padding: 80px 100px;
     display: flex;
@@ -582,7 +582,7 @@
     bottom: 15%;
     left: 10%;
     background: var(--accent-yellow);
-    color: #1A0D4B;
+    color: #024492;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -591,7 +591,7 @@
     justify-content: center;
     z-index: 10;
     box-shadow: 0 10px 20px rgba(228, 224, 0, 0.4);
-    border: 3px solid #1A0D4B;
+    border: 3px solid #024492;
     transition: transform 0.3s ease;
 }
 
@@ -623,7 +623,7 @@
 .mvv-icon-box {
     width: 54px;
     height: 54px;
-    background-color: #1A0D4B;
+    background-color: #024492;
     border-radius: 16px;
     display: flex;
     align-items: center;
